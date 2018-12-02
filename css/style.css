@@ -83,7 +83,7 @@ hr {
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 600;
 	color: #eee;
 }
@@ -182,9 +182,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: -1px;
-	margin-top: 0;
+	margin-top: -150px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+}
+.intro h2, .intro h4{
+	color: white;
+	text-shadow: 2px gray;
 }
 .intro p {
 	color: #fff;
@@ -192,6 +196,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 	margin-top: 20px;
 	line-height: 28px;
 	margin-bottom: 40px;
+}
+#startIn{
+	margin-bottom: 5px;
 }
 .intro .btn-custom {
 	border-top: 1px solid rgba(255,255,255,0.4);
@@ -236,11 +243,13 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin-top: 20px;
+	text-align: justify;
 }
 /* Services Section */
 #services {
-	padding: 120px 0;
 	background: #6aaf08;
+	height: 120vh;
+	padding-top: 50px;
 }
 #services .service-media {
 	margin: 10px;
@@ -270,6 +279,7 @@ header .intro-text {
 }
 #services hr {
 	background: rgba(255,255,255,0.6);
+	float: left;
 }
 /* Portfolio Section */
 #portfolio {
@@ -532,4 +542,22 @@ color: #777;
 }
 #footer a:hover {
 	color: #ccc;
+}
+
+#timer{
+	color: white;
+	font-size: 30px;
+}
+
+
+@media only screen and (max-width:999px){
+	#services {
+		background: #6aaf08;
+		height: 200vh;
+		padding-top: 50px;
+	}
+	#map{
+		display: none;
+	}
+
 }
