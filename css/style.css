@@ -248,7 +248,8 @@ header .intro-text {
 /* Services Section */
 #services {
 	background: #6aaf08;
-	height: 120vh;
+	height: 200vh;
+	margin: 0;
 	padding-top: 50px;
 }
 #services .service-media {
@@ -549,15 +550,45 @@ color: #777;
 	font-size: 30px;
 }
 
-
+.registerBtn{
+	background-color: #6aaf08;
+	text-decoration: none;
+  	-webkit-animation: glowing 1500ms infinite;
+  	-moz-animation: glowing 1500ms infinite;
+  	-o-animation: glowing 1500ms infinite;
+  	animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+	0% { background-color: #6aaf08; -webkit-box-shadow: 0 0 3px #6aaf08; }
+	50% { background-color: #437400f8; -webkit-box-shadow: 0 0 40px #437400f8; }
+	100% { background-color: #6aaf08; -webkit-box-shadow: 0 0 3px #6aaf08; }
+  }
+  
+  @-moz-keyframes glowing {
+	0% { background-color: #6aaf08; -moz-box-shadow: 0 0 3px #6aaf08; }
+	50% { background-color: #437400f8; -moz-box-shadow: 0 0 40px #437400f8; }
+	100% { background-color: #6aaf08; -moz-box-shadow: 0 0 3px #6aaf08; }
+  }
+  
+  @-o-keyframes glowing {
+	0% { background-color: #6aaf08; box-shadow: 0 0 3px #6aaf08; }
+	50% { background-color: #437400f8; box-shadow: 0 0 40px #437400f8; }
+	100% { background-color: #6aaf08; box-shadow: 0 0 3px #6aaf08; }
+  }
+  
+  @keyframes glowing {
+	0% { background-color: #6aaf08; box-shadow: 0 0 3px #6aaf08; }
+	50% { background-color: #437400f8; box-shadow: 0 0 40px #437400f8; }
+	100% { background-color: #6aaf08; box-shadow: 0 0 3px #6aaf08; }
+  }
 @media only screen and (max-width:999px){
 	#services {
 		background: #6aaf08;
 		height: 200vh;
 		padding-top: 50px;
 	}
-	#map{
-		display: none;
+	#map *{
+		width: 80vw;
 	}
 
 }
